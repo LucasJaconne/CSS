@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de imagem de fundo</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row; /*aqui voce pode escolher a direção. Orizontal ou Vertical, podendo mudar o sentido */
+            justify-content:center ; /*serve para mudar a posição da box*/
+        }
+
+        .container > div{
+            width: 200px;
+            height: 200px; 
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div.quadrado1{
+            background-color: rgb(153, 197, 255); 
+            border-radius: 10px;
+
+        }
+
+        div.quadrado2{
+            background-color: rgb(243, 151, 255);
+            border-radius: 10px;
+        }
+
+        div.quadrado3{
+            background-color: rgb(156, 255, 156);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+
+        <div class="quadrado1">
+        </div>
+        <div class="quadrado2">
+        </div>
+        <div class="quadrado3">
+        </div>
+
+    </main>
+</body>
+</html>
