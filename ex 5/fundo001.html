@@ -12,10 +12,20 @@
             margin: 0px;
         }
 
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+            background-repeat: repeat-y;
+            justify-content: flex-end;
+        }
+
         .container{
             display: flex;
-            flex-direction: row; /*aqui voce pode escolher a direção. Orizontal ou Vertical, podendo mudar o sentido */
-            justify-content:center ; /*serve para mudar a posição da box*/
+            flex-direction: row; 
+            justify-content:center; 
+            background-image: url(imagens/wallpaper005.jpg);
+            height: 300px;
+            padding-top:40px;
+            background-position: center top;
         }
 
         .container > div{
@@ -32,12 +42,12 @@
         }
 
         div.quadrado2{
-            background-color: rgb(243, 151, 255);
+            background-image: linear-gradient(to bottom, rgb(243, 151, 255), rgb(161, 112, 252) ) ;
             border-radius: 10px;
         }
 
         div.quadrado3{
-            background-color: rgb(156, 255, 156);
+            background-image: url('imagens/pattern003.png');
             border-radius: 10px;
         }
     </style>
