@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif; /*font-family serve para selecionar a fonte*/
+    /* height: 100%; é usado para deixar mais armonico o degrade, mas eu n usei aqui */
+}
+
+body {
+    background-color: #2A2E49;
+    background-attachment: fixed;
+    
+}
+
+p {
+    text-align: justify; /* text-align serve para ajustar o lugar to texto*/
+    color: #EAE9EC;
+}
+
+h1 {
+    text-align: center;
+    color: #2A2E49;
+}
+
+h2 {
+color: #2A2E49;
+}
+
+main{
+    background-color: #BC293F;
+    width: 600px; /*serve para criar um retangulo em certu lugar*/
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px; /* serve para ajustar o texto dentro do retangulo*/
+    border-radius: 25px; /* serve para deixar a borda curvada*/
+    box-shadow: 5px 5px 20px #0F101A; /* serve para dar sombra para o objeto, sen o primeiro valor da borda de altura, o outro de largura, e o último de tamanho da sombra*/
+}

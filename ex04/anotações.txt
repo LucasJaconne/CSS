@@ -1,0 +1,15 @@
+aqui vou anotar o que aprendi sobre o modelo de caixas:
+tudo elemento visivel na tela é um elemento de caixa, e esse elemento tem certas propriedades:
+
+height - altura
+width - largura
+border - uma borda na caixa
+padding - é como se fosse um preenchimento, por exemplo, se a borda estiver muito perto de seu objeto, vc pode usar um padding para preencher essa borda
+margin - o nome ja diz, é uma margen para limitar um espaço de sua caixa
+outline - é como se borda por cima da borda, como c fosse um contorno
+
+
+existem dois tipos de caixas, a box-level e a inline-level. box-level pula linha, inline-level é na mesma linha
+
+uma tag de box-level é o div
+uma tag de inline-level é o apan

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+
+        body{
+            background-color: rgb(101, 147, 187);
+            
+
+        }
+
+        div{
+            background-color: aliceblue;
+            border: 2px solid rgba(2, 2, 2, 0.788);
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            color: darkorange;
+
+        }
+        /*aqui vamos ver as pseudo-classes, onde usamos o ":" para caracterizar essa paseudo-classe
+        
+        logo abaixo vamos ver a pseudo-classe "hover", que significa q aonde eu passar o mouse ele vai ter uma reação
+
+        */
+        div:hover{
+            background-color: rgb(0, 34, 65);
+            
+        }
+         
+        /*no exemplo abaixo temos o div > p, que significa q tudo q está no p dentro do div n funciona*/
+
+        div > p {
+            display: none;
+        }
+
+        /*porem, abaixo temos a pseudo-classe que faz com que vc passe o mouse por cima e o p apareça*/
+
+        div:hover > p {
+            display: block;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <br><br>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+       
+            oi, eu sou o goku!
+            <p>mas o freesa matou o kuririn</p>
+       
+    
+    </div>
+</body>
+</html>

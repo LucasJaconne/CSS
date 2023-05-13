@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    background-color: #EAE9EC;
+}
+
+h1 {
+
+    /* 
+    Medidas absolutas
+    cm, mm, in(polegada), px, pc, pt
+
+    medidas relativas
+    em, ex, rem, vw, vh, %
+
+    a recomendação e trabalhar com "px" e "em"
+    */
+    text-align: center;
+    color: #BC293F;
+/*esses dois comandos acima é usado para o estilo e local do texto*/
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif ;
+    font-size: 100px;  /*geralmente, a fonte no paragrafo normal do texto (p) é 16px, do */
+    /* weight(peso) - width(largura) - height(altura) */
+    font-weight: bolder;
+    /*em font-weight, temos o lighter - normal - bold - bolder*/
+    font-style: normal;
+    text-decoration: none; /*Adiciona ou retira o sublinhado*/
+
+    /*para as fonte, usamos sempre as mesmas configurações:border:
+    font-style -> font-weight -> font-size -> font-family
+    para isso, temos um atalha, pra usarmos esses comandos
+    */
+    font: normal bolder 100px "trebuchet MS", sans-serif;
+    /*isso se chama shorthand*/
+}
+
+h2 {
+   font: italic bolder 40px "trebuchet MS", sans-serif;
+   text-align: center;
+}
+
+p {
+    font: normal bolder 20px "trebuchet MS", sans-serif;
+    text-align: left;
+    width: 600px;
+    background-color: #BC293F;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+
+}

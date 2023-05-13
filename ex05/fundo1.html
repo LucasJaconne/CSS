@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de imagem de fundo</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            height: 100vh; /*serve para dxar do tamanho ta pagina branca do site*/
+            background-image: url('imagens/wallpaper002.jpg');
+            background-repeat: no-repeat; /*pode dxar para repetir a imagen ou n*/
+            background-position: center top;/*posição da imagem*/
+            background-size: cover; /*serve para mudar o tamanho da imagem, pode-se colocar valores numéricos ou contain(imagem 100% exibida) ou cover(significa cobrir, ele cobre toda a tela, adaptando o fundo)*/
+            background-attachment: fixed; /*serve para fixar a imagem no centro, ent quando acontecer a rolagem de tela, ela n vai */
+
+
+            /*shorthand - background
+            
+            color > image > position > repeat > [size] > attachment
+
+            obs!! o size n está funcionando, ent use a shorthand normal, porem faça uma declaração separada para o size
+ 
+            */
+
+            /*ex:*/ background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+                    background-size: cover;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row; 
+            justify-content:center; 
+            background-color: rgb(180, 255, 67);
+            width: 1000px;
+            height: 300px;
+            padding-top:40px;
+            margin: auto;
+            background-position: center top;
+        }
+
+        .container > div{
+            width: 200px;
+            height: 200px; 
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div.quadrado1{
+            background-color: rgb(153, 197, 255); 
+            border-radius: 10px;
+
+        }
+
+        div.quadrado2{
+            background-image: linear-gradient(to bottom, rgb(243, 151, 255), rgb(161, 112, 252) ) ;
+            border-radius: 10px;
+        }
+
+        div.quadrado3{
+            background-image: url('imagens/pattern003.png');
+            border-radius: 10px;
+        }
+
+        section {
+            background-color: aliceblue;
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+
+        <div class="quadrado1">
+        </div>
+        <div class="quadrado2">
+        </div>
+        <div class="quadrado3">
+        </div>
+
+    </main>
+
+    <section>
+        <h1>ola mundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non in. Vitae ipsum consequuntur iste sit aut in at dolorem saepe ab, obcaecati itaque voluptatibus dicta sed pariatur cumque eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit aliquam amet sunt praesentium nobis optio, quas explicabo ab, placeat molestias eos fugiat vel dolor dignissimos ratione itaque iste inventore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non in. Vitae ipsum consequuntur iste sit aut in at dolorem saepe ab, obcaecati itaque voluptatibus dicta sed pariatur cumque eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit aliquam amet sunt praesentium nobis optio, quas explicabo ab, placeat molestias eos fugiat vel dolor dignissimos ratione itaque iste inventore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non in. Vitae ipsum consequuntur iste sit aut in at dolorem saepe ab, obcaecati itaque voluptatibus dicta sed pariatur cumque eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit aliquam amet sunt praesentium nobis optio, quas explicabo ab, placeat molestias eos fugiat vel dolor dignissimos ratione itaque iste inventore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non in. Vitae ipsum consequuntur iste sit aut in at dolorem saepe ab, obcaecati itaque voluptatibus dicta sed pariatur cumque eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit aliquam amet sunt praesentium nobis optio, quas explicabo ab, placeat molestias eos fugiat vel dolor dignissimos ratione itaque iste inventore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non in. Vitae ipsum consequuntur iste sit aut in at dolorem saepe ab, obcaecati itaque voluptatibus dicta sed pariatur cumque eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit aliquam amet sunt praesentium nobis optio, quas explicabo ab, placeat molestias eos fugiat vel dolor dignissimos ratione itaque iste inventore!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non in. Vitae ipsum consequuntur iste sit aut in at dolorem saepe ab, obcaecati itaque voluptatibus dicta sed pariatur cumque eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure fugit aliquam amet sunt praesentium nobis optio, quas explicabo ab, placeat molestias eos fugiat vel dolor dignissimos ratione itaque iste inventore!</p>
+    </section>
+</body>
+</html>

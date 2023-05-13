@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        body{
+            font-family: 'ubuntu', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        header{
+            background-color: coral;
+            padding: 10px;
+            margin: 10px 20px 10px 20px;
+            
+            
+        }
+
+        nav{
+            padding: 10px;
+            background-color: gray;
+        }
+
+        nav > h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        nav > a{
+            text-decoration: none;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: coral;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px 20px 10px 20px;
+            border-radius: 20px;
+        }
+        article{
+            background-color: grey;
+            border-radius: 5px 40px;
+        }
+        article > aside{
+            background-color: rgba(0, 0, 0, 0.164);
+            border-radius: 0px 0px 0px 40px;
+            text-align: center;
+        }
+        footer{
+            background-color: gray;
+            padding: 10px;
+            margin: 10px 20px 10px 20px;
+            box-shadow: 1px 1px 1px rgba(211, 211, 211, 0.644);
+        }
+        footer>p{
+            text-align: left;
+            padding: 1px;
+            font-size: 15px;
+            margin: 0px;
+        }
+        div#bola{
+            height: 600px;
+            width: 600px;
+            margin: 50px;
+            background-color: coral;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>MEU SITE</h1>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="notícias">
+            <article>
+                <h2>notícas da atlética UFF</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et fuga, nemo a dolorum iure ratione cumque repudiandae voluptas perspiciatis tenetur tempora recusandae velit iste ducimus at ipsum architecto animi exercitationem.</p>
+                <aside>
+                    Direito de JACONNE
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por JACONNE</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
